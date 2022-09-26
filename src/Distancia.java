@@ -4,7 +4,6 @@
  * @author eshaan
  */
 import java.util.Scanner;
-import java.lang.Math;
 
 public class Distancia {
     public static void main(String[] args) {
