@@ -34,12 +34,13 @@ public class MinRectangle {
         System.out.print("Enter y of top right (Rectangle 2): ");
         r2ty = sc.nextFloat(); sc.nextLine();
 
-        if(((r1bx <= r2tx && r1bx >= r2bx) || (r1tx <= r2tx && r1tx >= r2bx)) && (r1by <= r2ty && r1by >= r2by) || (r1ty <= r2ty && r1ty >= r2by))
+        if (((r1bx <= r2tx && r1bx >= r2bx) || (r1tx <= r2tx && r1tx >= r2bx))
+        && ((r1by <= r2ty && r1by >= r2by) || (r1ty <= r2ty && r1ty >= r2by)))
             intersection = true;
 
         if(intersection) {
             //TODO
         } else
-            System.out.println("No intersection so no minimum rectangle");
+            System.out.println("No intersection, no minimum rectangle");
     }
 }
