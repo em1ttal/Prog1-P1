@@ -1,10 +1,10 @@
+import java.util.Scanner;
+
 /**
  * Nim.java
  * Question 33
  * @author eshaan
  */
-import java.util.Scanner;
-
 public class Nim {
     public static void main(String[] args) {
         //Total number of tiles
@@ -22,12 +22,12 @@ public class Nim {
         //Computer starts
         if(start_decider == 0) {
             System.out.println("Computer starts");
-            /**
-             * While number of tiles is not 0, more than
-             * First: Original number of tiles
-             * Next: Tiles - tiles removed
-             * Last: Tiles = 0
-             * Cerca: Tiles != 0
+            /*
+              While number of tiles is not 0, more than
+              First: Original number of tiles
+              Next: Tiles - tiles removed
+              Last: Tiles = 0
+              Cerca: Tiles != 0
              */
             while(tiles != 0) {
                 if(tiles > 1) {
@@ -48,12 +48,12 @@ public class Nim {
         //User starts
         else {
             System.out.println("You start");
-            /**
-             * While number of tiles is not 0, more than
-             * First: Original number of tiles
-             * Next: Tiles - tiles removed
-             * Last: Tiles = 0
-             * Cerca: Tiles != 0
+            /*
+              While number of tiles is not 0, more than
+              First: Original number of tiles
+              Next: Tiles - tiles removed
+              Last: Tiles = 0
+              Cerca: Tiles != 0
              */
             while(tiles != 0) {
                 System.out.print("How many tiles will you remove (1 or 2)? ");
