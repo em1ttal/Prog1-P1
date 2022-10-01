@@ -7,13 +7,9 @@ import java.util.Scanner;
  */
 public class Nim {
     public static void main(String[] args) {
-        //Total number of tiles
         int tiles = 20 + (int) (Math.random() * (10));
-        //Scanner
         Scanner sc = new Scanner(System.in);
-        //Decider for who starts
         int start_decider = (int) (Math.random() * 2);
-        //Intialized variables of tiles removed
         int comp_remove;
         int user_remove;
 
