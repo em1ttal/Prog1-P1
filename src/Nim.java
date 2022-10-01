@@ -7,15 +7,28 @@ import java.util.Scanner;
 
 public class Nim {
     public static void main(String[] args) {
+        //Total number of tiles
         int tiles = 20 + (int) (Math.random() * (10));
+        //Scanner
         Scanner sc = new Scanner(System.in);
+        //Decider for who starts
         int start_decider = (int) (Math.random() * 2);
+        //Intialized variables of tiles removed
         int comp_remove;
         int user_remove;
 
         System.out.println("We will play with " + tiles + " tiles.");
+
+        //Computer starts
         if(start_decider == 0) {
             System.out.println("Computer starts");
+            /**
+             * While number of tiles is not 0, more than
+             * First: Original number of tiles
+             * Next: Tiles - tiles removed
+             * Last: Tiles = 0
+             * Cerca: Tiles != 0
+             */
             while(tiles != 0) {
                 if(tiles > 1) {
                     comp_remove = (int) (Math.random() * 2) + 1;
@@ -31,8 +44,17 @@ public class Nim {
                 } else
                     System.out.println("The computer has won!");
             }
-        } else {
+        }
+        //User starts
+        else {
             System.out.println("You start");
+            /**
+             * While number of tiles is not 0, more than
+             * First: Original number of tiles
+             * Next: Tiles - tiles removed
+             * Last: Tiles = 0
+             * Cerca: Tiles != 0
+             */
             while(tiles != 0) {
                 System.out.print("How many tiles will you remove (1 or 2)? ");
                 user_remove = sc.nextInt(); sc.nextLine();
